@@ -25,7 +25,7 @@ function Content() {
   const submitHandler = (e) => {
     e.preventDefault();
     try {
-      const colors = new Values(color).all(5);
+      const colors = new Values(color).all(10);
       setList(colors);
     } catch (error) {
       setError(true);
